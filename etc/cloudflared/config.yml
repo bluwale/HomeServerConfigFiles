@@ -2,7 +2,7 @@ origincert: /etc/cloudflared/cert.pem
 
 tunnel: bluwale-tunnel
 
-credentials-file: /home/bluwale/.cloudflared/0ef5560a-9288-4acc-ba6d-019b805aa018.json
+credentials-file: #REDACTED
 
 
 # Force the tunnel transport to HTTP/2 (TCP) for better reliability on ISPs that degrade UDP/QUIC
@@ -14,32 +14,32 @@ ingress:
 
   - hostname: nextcloud.bluwaleserver.org
 
-    service: http://localhost:8080
+    service: #REDACTED
 
 
   - hostname: home.bluwaleserver.org
 
-    service: http://localhost:8123
+    service: #REDACTED
 
 
   - hostname: frigate.bluwaleserver.org
 
-    service: http://localhost:5000
+    service: #REDACTED
 
 
   - hostname: emr.bluwaleserver.org
 
-    service: http://localhost:8081
+    service: #REDACTED
 
 
   - hostname: wedding.bluwaleserver.org
 
-    service: http://localhost:8082
+    service: #REDACTED
 
 
   - hostname: hls.bluwaleserver.org
 
-    service: http://localhost:8888
+    service: #REDACTED
 
 
   # default catch-all

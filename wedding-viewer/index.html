@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <title>Wedding Livestream</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+  <script src="app.js" defer></script>
+
+</head>
+
+<body>
+
+  <header class="hero">
+
+    <div class="hero-inner">
+
+      <h1>🤍 Wedding Livestream</h1>
+
+      <p>Welcome to Faisal & Nabiha's (virtual) ceremony!</p>
+
+    </div>
+
+  </header>
+
+
+  <!-- Password Gate -->
+
+  <section id="gate" class="card">
+
+    <h2>Enter the stream password</h2>
+
+    <form id="gateForm" autocomplete="off">
+
+      <input id="passwordInput" type="password" placeholder="Password" required />
+
+      <button type="submit">Unlock stream</button>
+
+      <p id="gateMsg" class="msg"></p>
+
+    </form>
+
+    <p class="hint">Having trouble? Refresh the page and try again.</p>
+
+  </section>
+
+
+  <!-- Video Player (kept inert until unlocked) -->
+
+  <section id="player" class="card hidden">
+
+    <video id="video" controls playsinline></video>
+
+    <p class="note">If the video doesn’t start right away, press play.</p>
+
+  </section>
+
+
+  <footer class="foot">
+
+    <small>© <span id="year"></span> Thank you for attending! We hope you enjoyed your stay :) 💐</small>
+
+  </footer>
+
+</body>
+
+</html>
+

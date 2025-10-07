@@ -1,0 +1,144 @@
+:root{
+
+  --bg:#0f0f12;
+
+  --card:#17171c;
+
+  --accent:#ff6fa9;  /* soft rose */
+
+  --accent-2:#ffd6e6; /* blush */
+
+  --text:#f2f2f7;
+
+  --muted:#b9bbc6;
+
+  --ring: rgba(255,111,169,.45);
+
+}
+
+
+*{box-sizing:border-box}
+
+html,body{height:100%}
+
+body{
+
+  margin:0;
+
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+
+  color:var(--text);
+
+  background: radial-gradient(1200px 600px at 10% -20%, #1b1b21 20%, transparent 50%) , var(--bg);
+
+  display:flex; flex-direction:column; gap:28px;
+
+}
+
+
+.hero{
+
+  background:
+
+    radial-gradient(800px 300px at 90% -40%, var(--ring), transparent 60%),
+
+    linear-gradient(180deg, #17171c 0%, transparent 100%);
+
+  padding:28px 16px 8px;
+
+  text-align:center;
+
+  border-bottom:1px solid #202028;
+
+}
+
+.hero h1{margin:6px 0 4px; font-weight:700; letter-spacing:.4px}
+
+.hero p{margin:0; color:var(--accent-2)}
+
+
+.card{
+
+  width:min(940px, 92vw);
+
+  margin:0 auto;
+
+  background:var(--card);
+
+  border:1px solid #202028;
+
+  border-radius:18px;
+
+  padding:22px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+
+}
+
+
+#gateForm{
+
+  display:flex; gap:12px; flex-wrap:wrap; align-items:center;
+
+}
+
+#gateForm input{
+
+  flex:1 1 260px;
+
+  background:#121217;
+
+  color:var(--text);
+
+  border:1px solid #2a2a33;
+
+  border-radius:12px;
+
+  padding:12px 14px;
+
+  outline:none;
+
+}
+
+#gateForm input:focus{border-color:var(--accent); box-shadow:0 0 0 3px var(--ring)}
+
+#gateForm button{
+
+  background:var(--accent);
+
+  color:#121217;
+
+  border:none; border-radius:12px;
+
+  padding:12px 16px; font-weight:700; cursor:pointer;
+
+}
+
+#gateForm button:hover{filter:brightness(1.05)}
+
+.msg{color:#ff9bbf; min-height:1.2em; margin:6px 2px 0}
+
+.hint{color:var(--muted); margin:.6em 2px 0}
+
+
+.hidden{display:none}
+
+
+#video{
+
+  width:100%; max-height:74vh;
+
+  background:#000;
+
+  border-radius:12px;
+
+  outline:none;
+
+}
+
+
+.note{color:var(--muted); margin:.6em 2px 0; text-align:center}
+
+
+.foot{padding:8px 0 24px; text-align:center; color:var(--muted)}
+

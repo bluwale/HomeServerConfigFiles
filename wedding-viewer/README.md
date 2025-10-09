@@ -10,6 +10,3 @@ This JavaScript file powers the interactive functionality. It manages password v
 how does index.html work?
 This is the main webpage that guests visit to watch the livestream. It defines the structure of the site: a header, a password entry “gate,” the hidden video player that unlocks on correct entry, and a footer message index. It also loads the stylesheet (styles.css) and JavaScript logic (app.js) that handle the design and functionality.
 
-
-how does styles.css work?
-This file handles the visual design of the site. It defines the color scheme (soft rose accents on a dark background), layout of cards and forms, and the responsive styling for the video player and password gate styles. Its goal is to keep the page elegant and readable on both desktop and mobile devices.

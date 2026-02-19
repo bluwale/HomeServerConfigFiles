@@ -4,7 +4,7 @@ tunnel: bluwale-tunnel
 
 credentials-file: #REDACTED
 
-
+#will only be able to access domains if connected to vpn and if tunnel is up, otherwise will get 502 error 
 # Force the tunnel transport to HTTP/2 (TCP) for better reliability on ISPs that degrade UDP/QUIC
 
 protocol: http2
@@ -12,32 +12,32 @@ protocol: http2
 
 ingress:
 
-  - hostname: nextcloud.bluwaleserver.org
+  - hostname: nextcloud.REDACTED
 
     service: #REDACTED
 
 
-  - hostname: home.bluwaleserver.org
+  - hostname: home.REDACTED
 
     service: #REDACTED
 
 
-  - hostname: frigate.bluwaleserver.org
+  - hostname: frigate.REDACTED
 
     service: #REDACTED
 
 
-  - hostname: emr.bluwaleserver.org
+  - hostname: emr.REDACTED
 
     service: #REDACTED
 
 
-  - hostname: wedding.bluwaleserver.org
+  - hostname: wedding.REDACTED
 
     service: #REDACTED
 
 
-  - hostname: hls.bluwaleserver.org
+  - hostname: hls.REDACTED
 
     service: #REDACTED
 

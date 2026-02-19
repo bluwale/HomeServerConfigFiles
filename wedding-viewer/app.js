@@ -2,9 +2,9 @@
 
 const CANDIDATE_STREAM_URLS = [
 
-  "https://hls.bluwaleserver.org/live/stream/index.m3u8",
+  "#PLACEHOLDER_STREAM_URL",   // <-- replace this with the actual stream URL
 
-  "https://hls.bluwaleserver.org/live/index.m3u8"
+  "#PLACEHOLDER_STREAM_URL_2", // <-- you can add more URLs as fallback options
 
 ];
 

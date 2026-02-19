@@ -1,0 +1,31 @@
+# MediaMTX v1.13.x flat schema
+
+
+rtmp: yes
+
+
+hls: yes
+
+hlsAddress: #REDACTED
+
+hlsAllowOrigin: "*"
+
+# Classic HLS (tolerant for long-distance viewers)
+
+hlsSegmentDuration: 4s      # 4–6s is typical; 4s keeps latency reasonable
+
+# Omit hlsPartDuration entirely to disable LL-HLS parts
+
+# hlsSegmentCount: 6        # ~24s buffer; uncomment if you want more resiliency
+
+
+webrtc: yes
+
+webrtcAddress: :#REDACTED
+
+
+paths:
+
+  live/stream:
+
+    source: publisher
